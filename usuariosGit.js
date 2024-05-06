@@ -42,23 +42,23 @@ function exibirInfoUsuario(consultaUsuariosConvertida) {
 
     //exibindo os valores
     resultado.innerHTML = `
-        <p>Usuário: ${name}</p>
-        <p>Número de seguidores: ${followers}</p>
-        <p>Localização: ${location}</p>
-        <p>Empresa: ${company}</p>
-        <p>Usuário desde: ${dataConvertida}</p>
+        <p>Usuário: ${name || 'não informado'}</p>
+        <p>Número de seguidores: ${followers || 'não informado'}</p>
+        <p>Localização: ${location || 'não informado'}</p>
+        <p>Empresa: ${company || 'não informado'}</p>
+        <p>Usuário desde: ${dataConvertida || 'não informado'}</p>
         <p>Blog: ${blog}</p>
-        <p>Número de repositórios públicos: ${repositorios}</p>
+        <p>Número de repositórios públicos: ${repositorios || 'não informado'}</p>
         `;
     
     console.log(`
-        Usuário: ${name}
-        Número de seguidores: ${followers}
-        Localização: ${location}
-        Empresa: ${company}
-        Usuário desde: ${dataConvertida}
+        Usuário: ${name || 'não informado'}
+        Número de seguidores: ${followers || 'não informado'}
+        Localização: ${location || 'não informado'}
+        Empresa: ${company || 'não informado'}
+        Usuário desde: ${dataConvertida || 'não informado'}
         Blog: ${blog}
-        Número de repositórios públicos: ${repositorios}`);
+        Número de repositórios públicos: ${repositorios || 'não informado'}`);
 }
 
 
